@@ -2422,6 +2422,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@remix-run/router@npm:1.20.0":
+  version: 1.20.0
+  resolution: "@remix-run/router@npm:1.20.0"
+  checksum: 10/e1d2420db94a1855b97f1784898d0ae389cf3b77129b8f419e51d4833b77ca2c92ac09e2cb558015324d64580a138fd6faa31e52fcc3ba90e3cc382a1a324d4a
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.3.1
   resolution: "@rollup/plugin-babel@npm:5.3.1"
@@ -10668,6 +10675,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "react-icons@npm:5.3.0"
+  peerDependencies:
+    react: "*"
+  checksum: 10/7f315d2a5e0eee7fefe01eac5cbe818b9592d88964f6c99ba454539a78cd2efd4430152e88113585c5a54bca6a5e1e7e7978df9cf69a03d8479a8d3d106a027c
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -10693,6 +10709,30 @@ __metadata:
   version: 0.11.0
   resolution: "react-refresh@npm:0.11.0"
   checksum: 10/1275699e2edc39dbced9bdb00e2e167e3a2868e0c8ae117ba9551556368cfe70453068e5209240d827122aad5504a64c59a24b9b9a2a0ab932472c8750203ea3
+  languageName: node
+  linkType: hard
+
+"react-router-dom@npm:^6.27.0":
+  version: 6.27.0
+  resolution: "react-router-dom@npm:6.27.0"
+  dependencies:
+    "@remix-run/router": "npm:1.20.0"
+    react-router: "npm:6.27.0"
+  peerDependencies:
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: 10/cfbcbc1d387d3341a335e3a075e487cc09dcbb62f1b83bc827fc3eec937523d5647a2c4488c804dc61581e65561823d0166d17b5dbc8579998c25b5a0bcabad6
+  languageName: node
+  linkType: hard
+
+"react-router@npm:6.27.0":
+  version: 6.27.0
+  resolution: "react-router@npm:6.27.0"
+  dependencies:
+    "@remix-run/router": "npm:1.20.0"
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 10/352e3af2075cdccf9d114b7e06d94a1b46a2147ba9d6e8643787a92464f5fd9ead950252a98d551f99f21860288bcf3a4f088cb5f46b28d1274a4e2ba24cc0f9
   languageName: node
   linkType: hard
 
@@ -11436,6 +11476,8 @@ __metadata:
     eslint-config-react-app: "npm:^7.0.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-icons: "npm:^5.3.0"
+    react-router-dom: "npm:^6.27.0"
     react-scripts: "npm:5.0.1"
     web-vitals: "npm:^2.1.0"
   languageName: unknown
