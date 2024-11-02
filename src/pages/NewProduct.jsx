@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { uploadImage } from "../api/uploader";
 import Button from "../components/ui/Button";
+import { addNewProduct } from "../api/firebase";
 
 export default function NewProduct() {
   const [product, setProduct] = useState({});
@@ -19,8 +20,8 @@ export default function NewProduct() {
     e.preventDefault();
     uploadImage(file).then((url) => {
       console.log(url);
+      addNewProduct(product, url);
     });
-    // 파이어베이스에 새로운 제품을 추가함
   };
 
   return (
