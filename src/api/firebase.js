@@ -24,7 +24,11 @@ const database = getDatabase(app);
 export function login() {
     signInWithPopup(auth, provider).catch(console.error);
 }
+provider.setCustomParameters({
 
+    prompt: "select_account",
+
+});
 export function logout() {
     signOut(auth).catch(console.error);
 }

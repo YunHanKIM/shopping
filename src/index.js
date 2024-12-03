@@ -11,7 +11,6 @@ import MyCart from './pages/MyCart';
 import NotFound from './pages/NotFound';
 import ProtectedRoute from './pages/ProtectedRoute';
 
-
 const router = createBrowserRouter([
   {
     path: '/',
@@ -26,23 +25,23 @@ const router = createBrowserRouter([
           <ProtectedRoute requireAdmin>
             <NewProduct />
           </ProtectedRoute>
-        )
+        ),
       },
-      { path: '/products/:id', element: <ProductDetail /> },
+      {
+        path: '/products/:id',
+        element: <ProductDetail />,
+      },
       {
         path: '/carts',
         element: (
           <ProtectedRoute>
             <MyCart />
           </ProtectedRoute>
-        )
+        ),
       },
-    ]
-  }
-])
-
-
-
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -50,4 +49,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
