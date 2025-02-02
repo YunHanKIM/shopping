@@ -2,6 +2,15 @@
 <h3>배포 주소 : https://yhshop.netlify.app/</h3>
 <br><br>
 
+## 기술
+1. Tool: Cursor
+2. front: react
+3. back: firebase, cloudnary
+
+firebase 사용 이유 : 구글로그인, database 사용하기 위해
+cloudnary 사용 이유 : 이미지를 더 빠르게 로딩하고 퀄리티에 영향을 주지 않음
+
+
 ## 프로젝트 계획
 #### 프로젝트 기능들
   1. 로그인, 로그아웃
