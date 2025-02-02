@@ -8,6 +8,7 @@
 3. back: firebase, cloudnary
 
 firebase 사용 이유 : 구글로그인, database 사용하기 위해
+
 cloudnary 사용 이유 : 이미지를 더 빠르게 로딩하고 퀄리티에 영향을 주지 않음
 
 
